@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .myhove:hover {
+            box-shadow: 0 4px 8px greenyellow;
+        }
+    </style>
+    <title>Portfolio</title>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class=" text-white p-4 flex justify-between items-center">
+        <h1 class="font-bold mt-2 md:text-2xl text-green-600">Célsio Malundo</h1>
+        <nav class="mt-2 flex justify-between items-center space-x-5">
+            <a href="#inicio" class=" hover:underline hover:text-green-600">Inicio</a>
+            <a href="#sobre" class=" hover:underline hover:text-green-600">Sobre</a>
+            <a href="#projetos" class=" hover:underline hover:text-green-600">Projectos</a>
+            <a href="#contacto" class="hover:underline hover:text-green-600">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="p-6">
+        <section class="mb-8 flex flex-col lg:flex-row justify-between items-center max-w-6xl mx-auto p-8" id="inicio">
+            <section class="w-full lg:w-1/2 xl:w-1/2 mb-6 lg:mb-0 mt-12">
+                <h2 class="text-4xl text-white">Bem vindo ao meu protifolio</h2>
+                <p class="text-gray-300 mt-4 text-2xl mb-4">Meu nome é Célsio Malundo, sou um desenvolvedor web apaixonado por criar soluções digitais inovadoras.</p>
+                <a href="#projetos" class=" bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Ver Projectos</a>
+            </section>
+            <section class="w-full lg:w-1/2 xl:w-1/2 mb-6 lg:mb-0 mt-12">
+
+                <img src="assets/img/perfil.png" alt="Célsio Malundo" class="rounded-full w-58 h-58 mx-auto mb-4 myhove">
+            </section>
+        </section>
+        <section class="bg-gray-800 p-2 rounded p-8 grid place-items-center" id="sobre">
+            <h2 class=" font-bold mb-4 text-4xl">Sobre Mim</h2>
+            <p class="text-gray-300">Célsio Malundo é um desenvolvedor apaixonado por criar soluções digitais inovadoras. Com experiência em desenvolvimento web e design, ele se dedica a criar websites bonitos e funcionais.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                <div class="bg-gray-700 p-4 rounded hover:scale-105 transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Habilidades</h3>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li><i class="fab fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><i class="fas fa-wind"></i> Tailwindcss</li>
+                        <li><i class="fas fa-code"></i> JavaScript</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                        <li><i class="fab fa-node-js"></i> Node.js</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-700 p-4 rounded hover:scale-105 transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Experiência</h3>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Desenvolvedor Web na Empresa EMERTEC (2025 - 2026)</li>
+                        <li>Estagiário de Desenvolvimento na Empresa EMERTEC (2024 -2025)</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-700 p-4 rounded hover:scale-105 transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Educação</h3>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Ensino de Base - Anagola</li>
+                        <li>Sundário 1º Ciclo - Zinga</li>
+                        <li>Técno de Informática - Instituto Médio Industrial de Luanda</li>
+                    </ul>
+                </div>
+        </section>
+        <section class="mt-8 text-center" id="projetos">
+            <h2 class="text-4xl font-bold mb-4 mt-8 ">Projectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-gray-800 p-8 rounded hover:scale-105 transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Propo-Cashe</h3>
+                    <p class="text-gray-300">Sistema de gestão de caixa para pequenas empresas.</p>
+                    <a href="#" class="text-green-400 hover:text-green-300">Ver Projecto</a>
+                </div>
+                <div class="bg-gray-800 p-8 rounded hover:scale-105 transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">MyAgro</h3>
+                    <p class="text-gray-300">Plataforma de apoio ao agricultor familiar.</p>
+                    <a href="#" class="text-green-400 hover:text-green-300">Ver Projecto</a>
+                </div>
+                <div class="bg-gray-800 p-8 rounded hover:scale-105 transition duration-300">
+                    <h3 class="text-lg font-semibold mb-2">Web Cam</h3>
+                    <p class="text-gray-300">Aplicação web para visualização de câmeras em tempo real.</p>
+                    <a href="#" class="text-green-400 hover:text-green-300">Ver Projecto</a>
+                </div>
+
+            </div>
+        </section>
+        <section class="mt-8" id="contacto">
+            <h2 class="text-4xl font-bold mb-4 text-center">Contacto</h2>
+            <form class="max-w-lg mx-auto bg-gray-800 p-6 rounded">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-300 mb-2">Nome:</label>
+                    <input type="text" id="name" class="w-full p-2 rounded bg-gray-700 text-white" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-300 mb-2">Email:</label>
+                    <input type="email" id="email" class="w-full p-2 rounded bg-gray-700 text-white" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-300 mb-2">Mensagem:</label>
+                    <textarea id="message" rows="4" class="w-full p-2 rounded bg-gray-700 text-white" required></textarea>
+                </div>
+                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded">Enviar</button>
+            </form>
+            <div class="mt-8 text-center">
+                <h3 class="text-xl font-semibold text-gray-300">Obrigado por entrar em contacto!</h3>
+                Redes sociais:
+                <div class="flex justify-center space-x-4 mt-4">
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-github fa-2x"></i></a>
+                </div>    
+            </div>
+        </section>
+        
+
+    </main>
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 Célsio Malundo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
